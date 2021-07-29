@@ -15,10 +15,6 @@ import "./App.css";
 function App() {
   const [playlist, setPlaylist] = useState(() => []);
 
-  // const [nowPlaying, setNowPlaying] = useState(
-  //   () => "https://www.youtube.com/embed/5qap5aO4i9A"
-  // );
-
   useEffect(async () => {
     try {
       await fetch(
@@ -93,8 +89,6 @@ function App() {
             </Route>
           </div>
         </div>
-
-        <section style={{ height: 300 }}></section>
       </Router>
     </div>
   );
